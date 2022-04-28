@@ -39,7 +39,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-        // ниже граничного значения на 1
+        // выше граничного значения на 1
     void shouldCountWhenCloseToBoundaryBelow() {
 
         int actual = service.remain(1001);
@@ -49,7 +49,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-        // ниже граничного значения на 1
+        // выше граничного значения
     void shouldCountWhenAboveBoundary() {
 
         int actual = service.remain(1050);
